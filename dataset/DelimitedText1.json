@@ -1,0 +1,53 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sales_transaction06-12-2020-10-20-33.csv",
+				"folderPath": "input",
+				"container": "container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PROD_ID",
+				"type": "String"
+			},
+			{
+				"name": "CUST_ID",
+				"type": "String"
+			},
+			{
+				"name": "TIME_ID",
+				"type": "String"
+			},
+			{
+				"name": "CHANNEL_ID",
+				"type": "String"
+			},
+			{
+				"name": "PROMO_ID",
+				"type": "String"
+			},
+			{
+				"name": "QUANTITY_SOLD",
+				"type": "String"
+			},
+			{
+				"name": "AMOUNT_SOLD",
+				"type": "String"
+			}
+		]
+	}
+}
