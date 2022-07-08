@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "All_EMP_Incremental.csv",
-				"folderPath": "Output",
+				"folderPath": "output",
 				"container": "sales"
 			},
 			"columnDelimiter": ",",
