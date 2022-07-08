@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "All_EMP_Incremental.csv",
-				"folderPath": "output",
+				"folderPath": "Output",
 				"container": "sales"
 			},
 			"columnDelimiter": ",",
