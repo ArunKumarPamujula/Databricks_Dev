@@ -1,0 +1,40 @@
+{
+	"name": "ds_souce_multiplefiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ln_source for multiple files",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "multiple files from ADF",
+				"container": "sales"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "credit_id",
+				"type": "String"
+			},
+			{
+				"name": "credit_type",
+				"type": "String"
+			},
+			{
+				"name": "credit_Name",
+				"type": "String"
+			},
+			{
+				"name": "credit_score",
+				"type": "String"
+			}
+		]
+	}
+}
