@@ -2,15 +2,16 @@
 	"name": "ds_sink_multiple_files",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ln_sink_gen2",
+			"referenceName": "ln_multiplefiles_sink_arun_test",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileSystem": "global"
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "global"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

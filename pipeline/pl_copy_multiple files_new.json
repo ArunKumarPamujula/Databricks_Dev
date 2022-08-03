@@ -1,5 +1,5 @@
 {
-	"name": "pl_copy_multiple files",
+	"name": "pl_copy_multiple files_new",
 	"properties": {
 		"activities": [
 			{
@@ -13,7 +13,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "sales/multiple files from ADF/"
+					},
+					{
+						"name": "Destination",
+						"value": "global/output/"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
@@ -30,7 +39,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
