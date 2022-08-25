@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "multiple files from ADF",
+				"folderPath": "input",
 				"container": "sales"
 			},
 			"columnDelimiter": ",",
